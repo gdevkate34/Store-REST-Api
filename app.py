@@ -18,9 +18,7 @@ jwt = JWT(app,authenticate,identity) #create JWT TOKEN
 
 
 #create tables in database created just before first http request
-@app.before_first_request
-def create_tables():
-	db.create_all()
+
 
 
 #add each resource created ,to api 
