@@ -22,7 +22,7 @@ jwt = JWT(app,authenticate,identity) #create JWT TOKEN
 
 
 #add each resource created ,to api 
-api.add_resource(Store,'/store')
+api.add_resource(Store,'/store/<string:name>')
 api.add_resource(StoreList,'/stores')
 api.add_resource(Item,'/item/<string:name>')
 api.add_resource(ItemList,'/items')
