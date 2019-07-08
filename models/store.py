@@ -5,7 +5,7 @@ class StoreModel(db.Model):
 	__tablename__ = 'stores'
 
 	id = db.Column(db.Integer, primary_key=True)
-	store_name = db.Column(db.String(80))
+	name = db.Column(db.String(80))
 
 	items = db.relationship('ItemModel',lazy='dynamic')
 	
